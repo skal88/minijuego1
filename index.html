@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="stage.js"></script>
+</head>
+<body>
+<input type="button" id="newEnemyBtn" value="Nuevo enemigo" />
+<canvas id="myCanvas" width="800" height="500"></canvas>
+<script type="text/javascript">
+
+var game1 = new stage("myCanvas");
+game1.startGame();
+
+document.getElementById("newEnemyBtn").addEventListener("click", function(e){
+	game1.newEnemy();
+})
+
+</script>
+
+</body>
+</html>
